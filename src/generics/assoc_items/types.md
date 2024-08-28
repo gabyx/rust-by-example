@@ -42,8 +42,8 @@ trait Contains {
     type B;
 
     fn contains(&self, _: &Self::A, _: &Self::B) -> bool;
-    fn first(&self) -> i32;
-    fn last(&self) -> i32;
+    fn first(&self) -> Self::A;
+    fn last(&self) ->  Self::B;
 }
 
 impl Contains for Container {
